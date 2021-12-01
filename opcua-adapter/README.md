@@ -5,3 +5,37 @@ Usage:
 opcua-adapter [config file - default is opcua-adapter.cfg]
 ```
 
+Configuration Example:
+```
+#
+# OPC UA Server connection info
+#
+OpcUAServer:
+    name: OPCUA
+    # url: <opcua server's url>
+    url: opc.tcp://milo.digitalpetri.com:62541/milo
+
+    # namespaceFilter: <stream data only from this node and below - optional>
+    namespaceFilter: ns=2;s=Dynamic
+
+    # sampleInterval: <expected publish rate of the data (ms) - default is 250>
+    sampleInterval: 1000
+
+    #
+    # Additional optional connection info
+    # user:     <user's id>
+    # password: <user's password>
+    # cert:     <location of certificate file>
+    # key:      <location of key file>
+
+#
+# OPC UA MTConnect Adapter setting
+#
+server:
+    # port: <port # to listen on>
+    port: 7801
+
+    # licenseKey: <your license key for opcua-adapter - default is demo mode if not provided>
+
+
+```
