@@ -1,0 +1,529 @@
+  <MTConnectDevices xmlns:m="urn:mtconnect.org:MTConnectStreams:2.0" xmlns="urn:mtconnect.org:MTConnectStreams:2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:mtconnect.org:MTConnectStreams:2.0 http://schemas.mtconnect.org/schemas/MTConnectStreams_2.0.xsd">
+    <Devices>
+      <Device id="d1" name="Mazak" uuid="Mazak">
+        <Components>
+          <Auxiliaries id="Aux" name="auxiliaries">
+            <Components>
+              <Environmental id="room" name="environmental">
+              <DataItems>
+                <DataItem category="SAMPLE" id="rmtmp1" type="TEMPERATURE" units="CELSIUS">
+                  <Filters>
+                    <Filter type="MINIMUM_DELTA">0.5</Filter>
+                  </Filters>
+                </DataItem>
+              </DataItems>
+              </Environmental>
+            </Components>
+          </Auxiliaries>
+          <Axes id="a" name="base">
+            <Components>
+              <Linear id="x" name="X" nativeName="X">
+                <Compositions>
+                  <Composition id="Xballscrew" type="BALLSCREW"/>
+                  <Composition id="Xmotor" type="MOTOR"/>
+                </Compositions>
+                <Configuration>
+                  <Motion actuation="DIRECT" coordinateSystemIdRef="machcoord" id="xmotion" type="PRISMATIC">
+                    <Axis>1 0 0</Axis>
+                    <Transformation>
+                      <Rotation>0 0 0</Rotation>
+                      <Translation>300 915 590</Translation>
+                    </Transformation>
+                  </Motion>
+                  <Relationships>
+                    <ComponentRelationship id="xchi" idRef="xaxis" type="CHILD"/>
+                    <ComponentRelationship id="xpar" idRef="enclosure" type="PARENT"/>
+                  </Relationships>
+                  <Specifications>
+                    <Specification id="spec001" type="LENGTH" units="MILLIMETER">
+                      <Nominal>650</Nominal>
+                    </Specification>
+                    <Specification id="spec002" type="LINEAR_FORCE" units="NEWTON">
+                      <Maximum>5200</Maximum>
+                      <Minimum>0</Minimum>
+                    </Specification>
+                    <Specification id="spec004" subType="PROGRAMMED" type="VELOCITY" units="MILLIMETER/SECOND">
+                      <Maximum>7000</Maximum>
+                      <Minimum>1</Minimum>
+                    </Specification>
+                    <Specification id="spec003" subType="RAPID" type="VELOCITY" units="MILLIMETER/SECOND">
+                      <Maximum>7000</Maximum>
+                      <Minimum>1</Minimum>
+                    </Specification>
+                  </Specifications>
+                </Configuration>
+              <DataItems>
+                <DataItem category="CONDITION" id="Xtravel" type="POSITION"/>
+                <DataItem category="SAMPLE" coordinateSystemIdRef="machcoord" id="Xabs" subType="ACTUAL" type="POSITION" units="MILLIMETER"/>
+                <DataItem category="SAMPLE" coordinateSystemIdRef="workcoord" id="Xpos" subType="ACTUAL" type="POSITION" units="MILLIMETER"/>
+                <DataItem category="SAMPLE" id="Xfrt" type="AXIS_FEEDRATE" units="MILLIMETER/SECOND"/>
+                <DataItem category="EVENT" id="xaxisstate" type="AXIS_STATE"/>
+                <DataItem category="SAMPLE" id="Xload" type="LOAD" units="PERCENT">
+                  <Filters>
+                    <Filter type="MINIMUM_DELTA">3</Filter>
+                  </Filters>
+                </DataItem>
+                <DataItem category="SAMPLE" compositionId="Xmotor" id="servotemp1" type="TEMPERATURE" units="CELSIUS">
+                  <Filters>
+                    <Filter type="MINIMUM_DELTA">0.5</Filter>
+                  </Filters>
+                </DataItem>
+              </DataItems>
+              </Linear>
+              <Linear id="y" name="Y" nativeName="Y">
+                <Compositions>
+                  <Composition id="Yballscrew" type="BALLSCREW"/>
+                  <Composition id="Ymotor" type="MOTOR"/>
+                </Compositions>
+                <Configuration>
+                  <Motion actuation="DIRECT" coordinateSystemIdRef="machcoord" id="ymotion" parentIdRef="xmotion" type="PRISMATIC">
+                    <Axis>0 1 0</Axis>
+                    <Transformation>
+                      <Rotation>0 0 0</Rotation>
+                      <Translation>-90 0 0</Translation>
+                    </Transformation>
+                  </Motion>
+                  <Relationships>
+                    <ComponentRelationship id="ychi" idRef="yaxis" type="CHILD"/>
+                    <ComponentRelationship id="ypar" idRef="xaxis" type="PARENT"/>
+                  </Relationships>
+                  <Specifications>
+                    <Specification id="spec007" type="LENGTH" units="MILLIMETER">
+                      <Nominal>550</Nominal>
+                    </Specification>
+                    <Specification id="spec008" type="LINEAR_FORCE" units="NEWTON">
+                      <Maximum>5200</Maximum>
+                      <Minimum>0</Minimum>
+                    </Specification>
+                    <Specification id="spec010" subType="PROGRAMMED" type="VELOCITY" units="MILLIMETER/SECOND">
+                      <Maximum>7000</Maximum>
+                      <Minimum>1</Minimum>
+                    </Specification>
+                    <Specification id="spec009" subType="RAPID" type="VELOCITY" units="MILLIMETER/SECOND">
+                      <Maximum>7000</Maximum>
+                      <Minimum>1</Minimum>
+                    </Specification>
+                  </Specifications>
+                </Configuration>
+              <DataItems>
+                <DataItem category="CONDITION" id="Ytravel" type="POSITION"/>
+                <DataItem category="SAMPLE" coordinateSystemIdRef="machcoord" id="Yabs" subType="ACTUAL" type="POSITION" units="MILLIMETER"/>
+                <DataItem category="SAMPLE" coordinateSystemIdRef="workcoord" id="Ypos" subType="ACTUAL" type="POSITION" units="MILLIMETER"/>
+                <DataItem category="SAMPLE" id="Yfrt" type="AXIS_FEEDRATE" units="MILLIMETER/SECOND"/>
+                <DataItem category="EVENT" id="yaxisstate" type="AXIS_STATE"/>
+                <DataItem category="SAMPLE" id="Yload" type="LOAD" units="PERCENT">
+                  <Filters>
+                    <Filter type="MINIMUM_DELTA">3</Filter>
+                  </Filters>
+                </DataItem>
+                <DataItem category="SAMPLE" compositionId="Ymotor" id="servotemp2" type="TEMPERATURE" units="CELSIUS">
+                  <Filters>
+                    <Filter type="MINIMUM_DELTA">0.5</Filter>
+                  </Filters>
+                </DataItem>
+              </DataItems>
+              </Linear>
+              <Linear id="z" name="Z" nativeName="Z">
+                <Compositions>
+                  <Composition id="Zballscrew" type="BALLSCREW"/>
+                  <Composition id="Zmotor" type="MOTOR"/>
+                </Compositions>
+                <Configuration>
+                  <Motion actuation="DIRECT" coordinateSystemIdRef="machcoord" id="zmotion" parentIdRef="ymotion" type="PRISMATIC">
+                    <Axis>0 0 1</Axis>
+                    <Transformation>
+                      <Rotation>0 0 0</Rotation>
+                      <Translation>0 640 0</Translation>
+                    </Transformation>
+                  </Motion>
+                  <Relationships>
+                    <ComponentRelationship id="zchi" idRef="zaxis" type="CHILD"/>
+                    <ComponentRelationship id="zpar" idRef="yaxis" type="PARENT"/>
+                  </Relationships>
+                  <Specifications>
+                    <Specification id="spec013" type="LENGTH" units="MILLIMETER">
+                      <Nominal>530</Nominal>
+                    </Specification>
+                    <Specification id="spec014" type="LINEAR_FORCE" units="NEWTON">
+                      <Maximum>9600</Maximum>
+                      <Minimum>0</Minimum>
+                    </Specification>
+                    <Specification id="spec016" subType="PROGRAMMED" type="VELOCITY" units="MILLIMETER/SECOND">
+                      <Maximum>7000</Maximum>
+                      <Minimum>1</Minimum>
+                    </Specification>
+                    <Specification id="spec015" subType="RAPID" type="VELOCITY" units="MILLIMETER/SECOND">
+                      <Maximum>7000</Maximum>
+                      <Minimum>1</Minimum>
+                    </Specification>
+                  </Specifications>
+                </Configuration>
+              <DataItems>
+                <DataItem category="CONDITION" id="Ztravel" type="POSITION"/>
+                <DataItem category="SAMPLE" coordinateSystemIdRef="machcoord" id="Zabs" subType="ACTUAL" type="POSITION" units="MILLIMETER"/>
+                <DataItem category="SAMPLE" coordinateSystemIdRef="workcoord" id="Zpos" subType="ACTUAL" type="POSITION" units="MILLIMETER"/>
+                <DataItem category="SAMPLE" id="Zfrt" type="AXIS_FEEDRATE" units="MILLIMETER/SECOND"/>
+                <DataItem category="EVENT" id="zaxisstate" type="AXIS_STATE"/>
+                <DataItem category="SAMPLE" id="Zload" type="LOAD" units="PERCENT">
+                  <Filters>
+                    <Filter type="MINIMUM_DELTA">3</Filter>
+                  </Filters>
+                </DataItem>
+                <DataItem category="SAMPLE" compositionId="Zmotor" id="servotemp3" type="TEMPERATURE" units="CELSIUS">
+                  <Filters>
+                    <Filter type="MINIMUM_DELTA">0.5</Filter>
+                  </Filters>
+                </DataItem>
+              </DataItems>
+              </Linear>
+              <Rotary id="br" name="B" nativeName="B">
+                <Compositions>
+                  <Composition id="Bmotor" type="MOTOR"/>
+                </Compositions>
+                <Configuration>
+                  <Motion actuation="DIRECT" coordinateSystemIdRef="machcoord" id="bmotion" type="REVOLUTE">
+                    <Axis>0 -1 0</Axis>
+                  </Motion>
+                  <Relationships>
+                    <ComponentRelationship id="brchi" idRef="trundle" type="CHILD"/>
+                    <ComponentRelationship id="brpar" idRef="enclosure" type="PARENT"/>
+                  </Relationships>
+                  <Specifications>
+                    <Specification id="spec027" type="ANGLE" units="DEGREE">
+                      <Maximum>120</Maximum>
+                      <Minimum>-30</Minimum>
+                    </Specification>
+                    <Specification id="spec024" type="TORQUE" units="NEWTON_METER">
+                      <Maximum>400</Maximum>
+                      <Minimum>0</Minimum>
+                    </Specification>
+                  </Specifications>
+                </Configuration>
+              <DataItems>
+                <DataItem category="CONDITION" id="Btravel" type="ANGLE"/>
+                <DataItem category="SAMPLE" coordinateSystemIdRef="machcoord" id="Babs" subType="ACTUAL" type="ANGLE" units="DEGREE"/>
+                <DataItem category="SAMPLE" coordinateSystemIdRef="workcoord" id="Bpos" subType="ACTUAL" type="ANGLE" units="DEGREE"/>
+                <DataItem category="SAMPLE" id="Bfrt" nativeUnits="DEGREE/MINUTE" type="ANGULAR_VELOCITY" units="DEGREE/SECOND"/>
+                <DataItem category="EVENT" id="baxisstate" type="AXIS_STATE"/>
+                <DataItem category="SAMPLE" id="Bload" type="LOAD" units="PERCENT">
+                  <Filters>
+                    <Filter type="MINIMUM_DELTA">3</Filter>
+                  </Filters>
+                </DataItem>
+                <DataItem category="EVENT" id="c3rfunc" type="ROTARY_MODE">
+                  <Constraints>
+                    <Value>CONTOUR</Value>
+                    <Value>INDEX</Value>
+                  </Constraints>
+                </DataItem>
+              </DataItems>
+              </Rotary>
+              <Rotary id="c" name="C1" nativeName="S">
+                <Compositions>
+                  <Composition id="C2motor" type="MOTOR"/>
+                </Compositions>
+                <Configuration>
+                  <Motion actuation="DIRECT" coordinateSystemIdRef="machcoord" id="c1motion" parentIdRef="zmotion" type="CONTINUOUS">
+                    <Axis>0 0 1</Axis>
+                    <Transformation>
+                      <Rotation>0 0 0</Rotation>
+                      <Translation>0 0 -467</Translation>
+                    </Transformation>
+                  </Motion>
+                  <Relationships>
+                    <ComponentRelationship id="spar" idRef="zaxis" type="PARENT"/>
+                  </Relationships>
+                  <Specifications>
+                    <Specification id="spec019" type="VELOCITY" units="REVOLUTION/MINUTE">
+                      <Maximum>12000</Maximum>
+                      <Minimum>0</Minimum>
+                    </Specification>
+                  </Specifications>
+                </Configuration>
+              <DataItems>
+                <DataItem category="CONDITION" id="Sload_cond" type="LOAD"/>
+                <DataItem category="CONDITION" id="Stemp_cond" type="TEMPERATURE"/>
+                <DataItem category="SAMPLE" id="Srpm" subType="ACTUAL" type="ROTARY_VELOCITY" units="REVOLUTION/MINUTE">
+                  <Filters>
+                    <Filter type="MINIMUM_DELTA">5</Filter>
+                  </Filters>
+                </DataItem>
+                <DataItem category="SAMPLE" id="Sload" type="LOAD" units="PERCENT">
+                  <Filters>
+                    <Filter type="MINIMUM_DELTA">3</Filter>
+                  </Filters>
+                </DataItem>
+                <DataItem category="SAMPLE" compositionId="Cmotor" id="Stemp" type="TEMPERATURE" units="CELSIUS">
+                  <Filters>
+                    <Filter type="MINIMUM_DELTA">0.5</Filter>
+                  </Filters>
+                </DataItem>
+                <DataItem category="EVENT" id="c2rfunc" type="ROTARY_MODE">
+                  <Constraints>
+                    <Value>SPINDLE</Value>
+                  </Constraints>
+                </DataItem>
+              </DataItems>
+              </Rotary>
+              <Rotary id="c2" name="C2" nativeName="C">
+                <Compositions>
+                  <Composition id="Cmotor" type="MOTOR"/>
+                </Compositions>
+                <Configuration>
+                  <Motion actuation="DIRECT" coordinateSystemIdRef="machcoord" id="c2motion" parentIdRef="bmotion" type="REVOLUTE">
+                    <Axis>0 0 -1</Axis>
+                  </Motion>
+                  <Relationships>
+                    <ComponentRelationship id="c2chi" idRef="table" type="CHILD"/>
+                    <ComponentRelationship id="c2par" idRef="trundle" type="PARENT"/>
+                  </Relationships>
+                  <Specifications>
+                    <Specification id="spec031" type="ANGLE" units="DEGREE">
+                      <Maximum>360</Maximum>
+                      <Minimum>-360</Minimum>
+                    </Specification>
+                    <Specification id="spec032" type="TORQUE" units="NEWTON_METER">
+                      <Maximum>400</Maximum>
+                      <Minimum>0</Minimum>
+                    </Specification>
+                  </Specifications>
+                </Configuration>
+              <DataItems>
+                <DataItem category="CONDITION" id="Ctravel" type="ANGLE"/>
+                <DataItem category="CONDITION" id="S2load_cond" type="LOAD"/>
+                <DataItem category="CONDITION" id="S2temp_cond" type="TEMPERATURE"/>
+                <DataItem category="SAMPLE" coordinateSystemIdRef="machcoord" id="Cabs" subType="ACTUAL" type="ANGLE" units="DEGREE"/>
+                <DataItem category="SAMPLE" coordinateSystemIdRef="workcoord" id="Cpos" subType="ACTUAL" type="ANGLE" units="DEGREE"/>
+                <DataItem category="SAMPLE" id="Cfrt" nativeUnits="DEGREE/MINUTE" type="ANGULAR_VELOCITY" units="DEGREE/SECOND"/>
+                <DataItem category="EVENT" id="caxisstate" type="AXIS_STATE"/>
+                <DataItem category="SAMPLE" id="Cload" type="LOAD" units="PERCENT">
+                  <Filters>
+                    <Filter type="MINIMUM_DELTA">3</Filter>
+                  </Filters>
+                </DataItem>
+                <DataItem category="EVENT" id="crfunc" type="ROTARY_MODE">
+                  <Constraints>
+                    <Value>CONTOUR</Value>
+                    <Value>SPINDLE</Value>
+                    <Value>INDEX</Value>
+                  </Constraints>
+                </DataItem>
+              </DataItems>
+              </Rotary>
+            </Components>
+          <DataItems>
+            <DataItem category="CONDITION" id="servo_cond" type="ACTUATOR"/>
+            <DataItem category="CONDITION" id="spindle_cond" type="SYSTEM"/>
+          </DataItems>
+          </Axes>
+          <Controller id="cont" name="controller">
+            <Components>
+              <Path id="path1" name="path">
+              <DataItems>
+                <DataItem category="CONDITION" id="motion_cond" type="MOTION_PROGRAM"/>
+                <DataItem category="CONDITION" id="path_system" type="SYSTEM"/>
+                <DataItem category="EVENT" id="activeprogram_cmt" subType="ACTIVE" type="PROGRAM_COMMENT"/>
+                <DataItem category="EVENT" id="activeprog" subType="ACTIVE" type="PROGRAM"/>
+                <DataItem category="SAMPLE" id="cspeed" subType="ACTUAL" type="CUTTING_SPEED" units="MILLIMETER/SECOND"/>
+                <DataItem category="SAMPLE" coordinateSystem="WORK" id="Fact" subType="ACTUAL" type="PATH_FEEDRATE" units="MILLIMETER/SECOND"/>
+                <DataItem category="EVENT" id="hd1chuckstate" type="CHUCK_STATE"/>
+                <DataItem category="EVENT" id="mode" type="CONTROLLER_MODE"/>
+                <DataItem category="EVENT" id="cmodryrun" subType="DRY_RUN" type="CONTROLLER_MODE_OVERRIDE"/>
+                <DataItem category="EVENT" id="execution" type="EXECUTION"/>
+                <DataItem category="EVENT" id="linenumber" subType="INCREMENTAL" type="LINE_NUMBER"/>
+                <DataItem category="EVENT" id="linelabel" type="LINE_LABEL"/>
+                <DataItem category="EVENT" id="cmomachineaxislock" subType="MACHINE_AXIS_LOCK" type="CONTROLLER_MODE_OVERRIDE"/>
+                <DataItem category="EVENT" id="program_cmt" subType="MAIN" type="PROGRAM_COMMENT"/>
+                <DataItem category="EVENT" id="program" subType="MAIN" type="PROGRAM"/>
+                <DataItem category="SAMPLE" coordinateSystemIdRef="workcoord" id="orientation" type="ORIENTATION" units="DEGREE_3D"/>
+                <DataItem category="EVENT" id="PartCountAct" type="PART_COUNT"/>
+                <DataItem category="SAMPLE" coordinateSystemIdRef="workcoord" id="pathpos" type="PATH_POSITION" units="MILLIMETER_3D"/>
+                <DataItem category="EVENT" id="peditname" type="PROGRAM_EDIT_NAME"/>
+                <DataItem category="EVENT" id="peditmode" type="PROGRAM_EDIT"/>
+                <DataItem category="EVENT" id="Fovr" subType="PROGRAMMED" type="PATH_FEEDRATE_OVERRIDE"/>
+                <DataItem category="EVENT" id="Frapidovr" subType="RAPID" type="PATH_FEEDRATE_OVERRIDE"/>
+                <DataItem category="EVENT" id="Sovr" type="ROTARY_VELOCITY_OVERRIDE"/>
+                <DataItem category="EVENT" coordinateSystemIdRef="workcoord" id="workoffsetrot" type="ROTATION" units="DEGREE_3D"/>
+                <DataItem category="EVENT" id="sequenceNum" type="x:SEQUENCE_NUMBER"/>
+                <DataItem category="EVENT" id="cmosingleblock" subType="SINGLE_BLOCK" type="CONTROLLER_MODE_OVERRIDE"/>
+                <DataItem category="EVENT" id="Tool_group" type="TOOL_GROUP"/>
+                <DataItem category="EVENT" id="Tool_number" type="TOOL_NUMBER"/>
+                <DataItem category="EVENT" id="Tool_suffix" type="x:TOOL_SUFFIX"/>
+                <DataItem category="EVENT" coordinateSystemIdRef="workcoord" id="workoffsettrans" type="TRANSLATION" units="MILLIMETER_3D"/>
+                <DataItem category="EVENT" id="unitNum" type="x:UNIT"/>
+                <DataItem category="EVENT" id="cvars" representation="DATA_SET" type="VARIABLE"/>
+                <DataItem category="EVENT" id="waitstate" type="WAIT_STATE"/>
+                <DataItem category="EVENT" id="woffset" type="WORK_OFFSET"/>
+              </DataItems>
+              </Path>
+            </Components>
+          <DataItems>
+            <DataItem category="CONDITION" id="comms_cond" type="COMMUNICATIONS"/>
+            <DataItem category="CONDITION" id="logic_cond" type="LOGIC_PROGRAM"/>
+            <DataItem category="CONDITION" id="system_cond" type="SYSTEM"/>
+            <DataItem category="SAMPLE" id="auto_time" subType="x:AUTO" type="ACCUMULATED_TIME" units="SECOND"/>
+            <DataItem category="SAMPLE" id="cut_time" subType="x:CUT" type="ACCUMULATED_TIME" units="SECOND"/>
+            <DataItem category="EVENT" id="estop" type="EMERGENCY_STOP"/>
+            <DataItem category="EVENT" id="pallet_num" type="PALLET_ID"/>
+            <DataItem category="SAMPLE" id="total_time" subType="x:TOTAL" type="ACCUMULATED_TIME" units="SECOND"/>
+            <DataItem category="SAMPLE" id="total_auto_cut_time" subType="x:TOTALCUTTIME" type="ACCUMULATED_TIME" units="SECOND"/>
+          </DataItems>
+          </Controller>
+          <Door id="door1" name="door">
+          <DataItems>
+            <DataItem category="EVENT" id="doorstate" type="DOOR_STATE"/>
+          </DataItems>
+          </Door>
+          <Enclosure id="enclosure" name="enclosure">
+            <Configuration>
+              <SolidModel coordinateSystemIdRef="base" id="frame" itemRef="ENCLOSURE" mediaType="OBJ" solidModelIdRef="model"/>
+            </Configuration>
+          <DataItems>
+            <DataItem category="SAMPLE" id="insidetemp" type="TEMPERATURE" units="CELSIUS"/>
+          </DataItems>
+          </Enclosure>
+          <Parts id="parts">
+            <Components>
+              <PartOccurrence id="partocc">
+              <DataItems>
+                <DataItem category="EVENT" id="fixture_geo" representation="DATA_SET" type="FIXTURE_GEOMETRY"/>
+                <DataItem category="EVENT" id="fixture_uuid" type="FIXTURE_UNIQUE_ID"/>
+                <DataItem category="EVENT" id="part_geo" representation="DATA_SET" type="PART_GEOMETRY"/>
+                <DataItem category="EVENT" id="part_uuid" type="PART_UNIQUE_ID"/>
+              </DataItems>
+              </PartOccurrence>
+            </Components>
+          </Parts>
+          <Resources id="resources" name="resources">
+            <Components>
+              <Materials id="materials" name="materials">
+                <Components>
+                  <Stock id="procstock" name="stock">
+                  <DataItems>
+                    <DataItem category="EVENT" id="stock" type="MATERIAL"/>
+                  </DataItems>
+                  </Stock>
+                </Components>
+              </Materials>
+              <Personnel id="personnel" name="personnel">
+              <DataItems>
+                <DataItem category="EVENT" id="operator" type="USER"/>
+              </DataItems>
+              </Personnel>
+            </Components>
+          </Resources>
+          <Structures id="struct">
+            <Components>
+              <Link id="table" name="TABLE">
+                <Configuration>
+                  <SolidModel coordinateSystemIdRef="base" id="table_model" itemRef="TABLE" mediaType="OBJ" solidModelIdRef="model"/>
+                </Configuration>
+              </Link>
+              <Link id="trundle" name="TRUNDLE">
+                <Configuration>
+                  <SolidModel coordinateSystemIdRef="base" id="trundle_model" itemRef="TRUNDLE" mediaType="OBJ" solidModelIdRef="model"/>
+                </Configuration>
+              </Link>
+              <Link id="xaxis" name="X_AXIS">
+                <Configuration>
+                  <SolidModel coordinateSystemIdRef="base" id="x_model" itemRef="X_AXIS" mediaType="OBJ" solidModelIdRef="model"/>
+                </Configuration>
+              </Link>
+              <Link id="yaxis" name="Y_AXIS">
+                <Configuration>
+                  <SolidModel coordinateSystemIdRef="base" id="y_model" itemRef="Y_AXIS" mediaType="OBJ" solidModelIdRef="model"/>
+                </Configuration>
+              </Link>
+              <Link id="zaxis" name="Z_AXIS">
+                <Configuration>
+                  <SolidModel coordinateSystemIdRef="base" id="z_model" itemRef="Z_AXIS" mediaType="OBJ" solidModelIdRef="model"/>
+                </Configuration>
+              </Link>
+            </Components>
+            <Configuration>
+              <SolidModel coordinateSystemIdRef="base" href="./objs/mazak-fixture.obj" id="model" mediaType="OBJ">
+                <Scale>1000 1000 1000</Scale>
+                <Transformation>
+                  <Rotation>0 0 0</Rotation>
+                  <Translation>0 0 860</Translation>
+                </Transformation>
+              </SolidModel>
+            </Configuration>
+          </Structures>
+          <Systems id="systems" name="systems">
+            <Components>
+              <Coolant id="coolant" name="coolant">
+              <DataItems>
+                <DataItem category="CONDITION" id="coolant_cond" type="SYSTEM"/>
+                <DataItem category="SAMPLE" id="CONCENTRATION" type="CONCENTRATION" units="PERCENT"/>
+                <DataItem category="SAMPLE" id="cooltemp" type="TEMPERATURE" units="CELSIUS">
+                  <Filters>
+                    <Filter type="MINIMUM_DELTA">0.5</Filter>
+                  </Filters>
+                </DataItem>
+              </DataItems>
+              </Coolant>
+              <Electric id="elec" name="electric">
+              <DataItems>
+                <DataItem category="CONDITION" id="electric_cond" type="SYSTEM"/>
+              </DataItems>
+              </Electric>
+              <Hydraulic id="hydraulic" name="hydraulic">
+              <DataItems>
+                <DataItem category="CONDITION" id="hydra_cond" type="SYSTEM"/>
+              </DataItems>
+              </Hydraulic>
+              <Lubrication id="lubrication" name="lubrication">
+              <DataItems>
+                <DataItem category="CONDITION" id="lubrication_cond" type="SYSTEM"/>
+                <DataItem category="EVENT" id="lubelevel" type="LEVEL" units="PERCENT"/>
+              </DataItems>
+              </Lubrication>
+              <Pneumatic id="pneumatic" name="pneumatic">
+              <DataItems>
+                <DataItem category="CONDITION" id="pneu_cond" type="SYSTEM"/>
+              </DataItems>
+              </Pneumatic>
+            </Components>
+          </Systems>
+        </Components>
+        <Configuration>
+          <CoordinateSystems>
+            <CoordinateSystem id="base" type="BASE">
+              <Origin>0 0 0</Origin>
+            </CoordinateSystem>
+            <CoordinateSystem id="machcoord" parentIdRef="base" type="MACHINE">
+              <Transformation>
+                <Rotation>0 0 0</Rotation>
+                <Translation>210 275 1430</Translation>
+              </Transformation>
+            </CoordinateSystem>
+            <CoordinateSystem id="workcoord" parentIdRef="machcoord" type="OBJECT">
+              <Transformation>
+                <Rotation>0 0 0</Rotation>
+                <Translation>0 0 0</Translation>
+              </Transformation>
+            </CoordinateSystem>
+          </CoordinateSystems>
+        </Configuration>
+      <DataItems>
+        <DataItem category="EVENT" id="gui" type="APPLICATION"/>
+        <DataItem category="EVENT" discrete="true" id="d1_asset_chg" type="ASSET_CHANGED"/>
+        <DataItem category="EVENT" id="d1_asset_rem" type="ASSET_REMOVED"/>
+        <DataItem category="EVENT" id="avail" type="AVAILABILITY"/>
+        <DataItem category="EVENT" id="emdelay" subType="DELAY" type="EQUIPMENT_MODE"/>
+        <DataItem category="EVENT" id="functionalmode" type="FUNCTIONAL_MODE"/>
+        <DataItem category="EVENT" id="emloaded" subType="LOADED" type="EQUIPMENT_MODE"/>
+        <DataItem category="EVENT" id="guimfg" subType="MANUFACTURER" type="APPLICATION"/>
+        <DataItem category="EVENT" id="osmfg" subType="MANUFACTURER" type="OPERATING_SYSTEM"/>
+        <DataItem category="EVENT" id="emoperating" subType="OPERATING" type="EQUIPMENT_MODE"/>
+        <DataItem category="EVENT" id="operatingsystem" type="OPERATING_SYSTEM"/>
+        <DataItem category="EVENT" id="empowered" subType="POWERED" type="EQUIPMENT_MODE"/>
+        <DataItem category="EVENT" id="guiversion" subType="VERSION" type="APPLICATION"/>
+        <DataItem category="EVENT" id="osversion" subType="VERSION" type="OPERATING_SYSTEM"/>
+        <DataItem category="EVENT" id="emworking" subType="WORKING" type="EQUIPMENT_MODE"/>
+      </DataItems>
+        <Description manufacturer="Mazak_Corporation" serialNumber="317641">Variaxis w/SMooth-AI</Description>
+      </Device>
+    </Devices>
+  </MTConnectDevices>
