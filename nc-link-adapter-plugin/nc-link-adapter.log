@@ -1,0 +1,133 @@
+2021-12-02T04:07:29.370562Z (0x00000001232c9e00) [warning] pipeline.deliver: Could not find data item: _asset_update_rate, exiting metrics
+2021-12-02T04:07:29.370862Z (0x00000001232c9e00) [warning] pipeline.deliver: Could not find data item: _observation_update_rate, exiting metrics
+2021-12-02T04:07:29.392230Z (0x000070000c13c000) [info] : device [NC-Link] 189FFDD66F369F1 - stale data update interval -1
+2021-12-02T04:07:30.186017Z (0x000070000c13c000) [info] : publish received "Probe/Query/Response/189FFDD66F369F1" size 8652 - process device's model file.
+2021-12-02T04:07:40.489807Z (0x0000000118c34e00) [warning] pipeline.deliver: Could not find data item: _asset_update_rate, exiting metrics
+2021-12-02T04:07:40.490094Z (0x0000000118c34e00) [warning] pipeline.deliver: Could not find data item: _observation_update_rate, exiting metrics
+2021-12-02T04:07:40.514108Z (0x0000700008f09000) [info] : device [NC-Link] 189FFDD66F369F1 - stale data update interval -1
+2021-12-02T04:07:41.282027Z (0x0000700008f09000) [info] : publish received "Probe/Query/Response/189FFDD66F369F1" size 8652 - process device's model file.
+2021-12-02T04:07:42.455889Z (0x0000700008f09000) [info] : Reconnect now!
+2021-12-02T04:07:42.636511Z (0x0000700008f09000) [info] : async_connect callback: Success
+2021-12-02T04:07:43.091782Z (0x0000700008f09000) [info] : publish received "Query/Response/189FFDD66F369F1" size 7180 - process device's query result.
+2021-12-02T04:07:43.148122Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 01035001
+2021-12-02T04:07:43.148354Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 01035002
+2021-12-02T04:07:43.148461Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 01035003
+2021-12-02T04:07:43.148562Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 0103502003
+2021-12-02T04:07:43.148661Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 01035101
+2021-12-02T04:07:43.148759Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 01035102
+2021-12-02T04:07:43.148857Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 01035103
+2021-12-02T04:07:43.148956Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 0103512003
+2021-12-02T04:07:43.149055Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 01035201
+2021-12-02T04:07:43.149153Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 01035202
+2021-12-02T04:07:43.149252Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 01035203
+2021-12-02T04:07:43.149351Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 0103522003
+2021-12-02T04:07:43.149450Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 01035301
+2021-12-02T04:07:43.149549Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 01035302
+2021-12-02T04:07:43.149648Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 01035303
+2021-12-02T04:07:43.149750Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 0103532002
+2021-12-02T04:07:43.149880Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 01035404
+2021-12-02T04:07:43.149975Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 01035405
+2021-12-02T04:07:43.150068Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 01035407
+2021-12-02T04:07:43.150162Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 01035409
+2021-12-02T04:07:43.150260Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 01035410
+2021-12-02T04:07:43.150356Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 01035412
+2021-12-02T04:07:43.150432Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 01035415
+2021-12-02T04:07:43.150505Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 01035430
+2021-12-02T04:07:43.150578Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 01035431
+2021-12-02T04:07:43.150651Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 01035432
+2021-12-02T04:07:43.150723Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 01035433
+2021-12-02T04:07:43.150796Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 01035435
+2021-12-02T04:07:43.150869Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 01035436
+2021-12-02T04:07:43.150942Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 01035437
+2021-12-02T04:07:43.151015Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 01035439
+2021-12-02T04:07:43.151088Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 01035440
+2021-12-02T04:07:43.151161Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 01035441
+2021-12-02T04:07:43.151235Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 01035442
+2021-12-02T04:07:43.151308Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 01035443
+2021-12-02T04:07:43.151381Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 01035450
+2021-12-02T04:07:43.151455Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 01035455
+2021-12-02T04:07:43.151528Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 01035456
+2021-12-02T04:07:43.151601Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 01035457
+2021-12-02T04:07:43.151692Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 01035460
+2021-12-02T04:07:43.151766Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 01035470
+2021-12-02T04:07:43.151840Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 01035471
+2021-12-02T04:07:43.151913Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 01035472
+2021-12-02T04:07:43.151986Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 01035473
+2021-12-02T04:07:43.152060Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 01035474
+2021-12-02T04:07:43.152133Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 01035475
+2021-12-02T04:07:43.152207Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 01035478
+2021-12-02T04:07:43.152281Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 01035479
+2021-12-02T04:07:43.152355Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 01035480
+2021-12-02T04:07:43.152429Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 01035489
+2021-12-02T04:07:43.273603Z (0x0000700008f09000) [info] : publish received "Sample/189FFDD66F369F1/sample_channel1" size 13092
+2021-12-02T04:07:43.339749Z (0x0000700008f09000) [info] : publish received "Sample/189FFDD66F369F1/sample_channel1" size 6666
+2021-12-02T04:07:43.356558Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 0103502001
+2021-12-02T04:07:43.356805Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 0103502101
+2021-12-02T04:07:43.356974Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 0103502201
+2021-12-02T04:07:43.357090Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 0103502202
+2021-12-02T04:07:43.357192Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 0103512001
+2021-12-02T04:07:43.357285Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 0103512101
+2021-12-02T04:07:43.357376Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 0103512201
+2021-12-02T04:07:43.357467Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 0103512202
+2021-12-02T04:07:43.357558Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 0103522001
+2021-12-02T04:07:43.357649Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 0103522101
+2021-12-02T04:07:43.357741Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 0103522201
+2021-12-02T04:07:43.357866Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 0103522202
+2021-12-02T04:07:43.357960Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 0103532001
+2021-12-02T04:07:43.358052Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 0103532101
+2021-12-02T04:07:43.358143Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 0103532102
+2021-12-02T04:07:43.358237Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 0103532103
+2021-12-02T04:07:43.358328Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 01035411
+2021-12-02T04:07:43.358419Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 01035413
+2021-12-02T04:07:43.358510Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 01035414
+2021-12-02T04:07:43.358601Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 010302
+2021-12-02T04:07:43.358691Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 01035434
+2021-12-02T04:07:43.358784Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 01035488
+2021-12-02T04:07:43.447730Z (0x0000700008f09000) [info] : publish received "Sample/189FFDD66F369F1/sample_channel1" size 6666
+2021-12-02T04:07:43.478444Z (0x0000700008f09000) [info] : publish received "Sample/189FFDD66F369F1/sample_channel1" size 6729
+2021-12-02T04:07:43.588676Z (0x0000700008f09000) [info] : publish received "Sample/189FFDD66F369F1/sample_channel1" size 6666
+2021-12-02T04:07:43.701564Z (0x0000700008f09000) [info] : publish received "Sample/189FFDD66F369F1/sample_channel1" size 6666
+2021-12-02T04:07:43.808539Z (0x0000700008f09000) [info] : publish received "Sample/189FFDD66F369F1/sample_channel1" size 6729
+2021-12-02T04:07:43.919786Z (0x0000700008f09000) [info] : publish received "Sample/189FFDD66F369F1/sample_channel1" size 6666
+2021-12-02T04:07:44.028065Z (0x0000700008f09000) [info] : publish received "Sample/189FFDD66F369F1/sample_channel1" size 6729
+2021-12-02T04:07:44.147716Z (0x0000700008f09000) [info] : publish received "Sample/189FFDD66F369F1/sample_channel1" size 6666
+2021-12-02T04:07:44.250231Z (0x0000700008f09000) [info] : publish received "Sample/189FFDD66F369F1/sample_channel1" size 6666
+2021-12-02T04:07:44.360975Z (0x0000700008f09000) [info] : publish received "Sample/189FFDD66F369F1/sample_channel1" size 13029
+2021-12-02T04:07:44.469170Z (0x0000700008f09000) [info] : publish received "Sample/189FFDD66F369F1/sample_channel1" size 6666
+2021-12-02T04:07:44.579989Z (0x0000700008f09000) [info] : publish received "Sample/189FFDD66F369F1/sample_channel1" size 6666
+2021-12-02T04:07:44.690345Z (0x0000700008f09000) [info] : publish received "Sample/189FFDD66F369F1/sample_channel1" size 6729
+2021-12-02T04:07:44.799302Z (0x0000700008f09000) [info] : publish received "Sample/189FFDD66F369F1/sample_channel1" size 6666
+2021-12-02T04:07:44.910149Z (0x0000700008f09000) [info] : publish received "Sample/189FFDD66F369F1/sample_channel1" size 6729
+2021-12-02T04:07:45.018492Z (0x0000700008f09000) [info] : publish received "Sample/189FFDD66F369F1/sample_channel1" size 6666
+2021-12-02T04:07:45.129929Z (0x0000700008f09000) [info] : publish received "Sample/189FFDD66F369F1/sample_channel1" size 6729
+2021-12-02T04:07:45.241956Z (0x0000700008f09000) [info] : publish received "Sample/189FFDD66F369F1/sample_channel1" size 6666
+2021-12-02T04:07:45.348999Z (0x0000700008f09000) [info] : publish received "Sample/189FFDD66F369F1/sample_channel1" size 6666
+2021-12-02T04:07:45.459037Z (0x0000700008f09000) [info] : publish received "Sample/189FFDD66F369F1/sample_channel1" size 6666
+2021-12-02T04:07:45.554045Z (0x0000700008f09000) [info] : publish received "Sample/189FFDD66F369F1/sample_channel0" size 135
+2021-12-02T04:07:45.583862Z (0x0000700008f09000) [info] : publish received "Sample/189FFDD66F369F1/sample_channel1" size 13029
+2021-12-02T04:07:45.617580Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 010303
+2021-12-02T04:07:45.617799Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 010305
+2021-12-02T04:07:45.617939Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 010306
+2021-12-02T04:07:45.618078Z (0x0000700008f8c000) [info] DataItemMapper.ShdrTokenMapper.operator->DataItemMapper.ShdrTokenMapper.toDataItem: Could not find data item: 010307
+2021-12-02T04:07:45.685141Z (0x0000700008f09000) [info] : publish received "Sample/189FFDD66F369F1/sample_channel1" size 6729
+2021-12-02T04:07:45.789880Z (0x0000700008f09000) [info] : publish received "Sample/189FFDD66F369F1/sample_channel1" size 6666
+2021-12-02T04:07:45.901432Z (0x0000700008f09000) [info] : publish received "Sample/189FFDD66F369F1/sample_channel1" size 6729
+2021-12-02T04:07:46.009490Z (0x0000700008f09000) [info] : publish received "Sample/189FFDD66F369F1/sample_channel1" size 6666
+2021-12-02T04:07:46.119034Z (0x0000700008f09000) [info] : publish received "Sample/189FFDD66F369F1/sample_channel1" size 6729
+2021-12-02T04:07:46.232713Z (0x0000700008f09000) [info] : publish received "Sample/189FFDD66F369F1/sample_channel1" size 6729
+2021-12-02T04:07:46.340634Z (0x0000700008f09000) [info] : publish received "Sample/189FFDD66F369F1/sample_channel1" size 6729
+2021-12-02T04:07:46.449609Z (0x0000700008f09000) [info] : publish received "Sample/189FFDD66F369F1/sample_channel1" size 6666
+2021-12-02T04:07:46.560848Z (0x0000700008f09000) [info] : publish received "Sample/189FFDD66F369F1/sample_channel1" size 6729
+2021-12-02T04:07:46.670493Z (0x0000700008f09000) [info] : publish received "Sample/189FFDD66F369F1/sample_channel1" size 6666
+2021-12-02T04:07:46.779271Z (0x0000700008f09000) [info] : publish received "Sample/189FFDD66F369F1/sample_channel1" size 6729
+2021-12-02T04:07:46.893258Z (0x0000700008f09000) [info] : publish received "Sample/189FFDD66F369F1/sample_channel1" size 13155
+2021-12-02T04:07:47.001370Z (0x0000700008f09000) [info] : publish received "Sample/189FFDD66F369F1/sample_channel1" size 6729
+2021-12-02T04:07:47.116292Z (0x0000700008f09000) [info] : publish received "Sample/189FFDD66F369F1/sample_channel1" size 6666
+2021-12-02T04:07:47.228712Z (0x0000700008f09000) [info] : publish received "Sample/189FFDD66F369F1/sample_channel1" size 6729
+2021-12-02T04:07:47.332056Z (0x0000700008f09000) [info] : publish received "Sample/189FFDD66F369F1/sample_channel1" size 6666
+2021-12-02T04:07:47.442289Z (0x0000700008f09000) [info] : publish received "Sample/189FFDD66F369F1/sample_channel1" size 6729
+2021-12-02T04:07:47.551976Z (0x0000700008f09000) [info] : publish received "Sample/189FFDD66F369F1/sample_channel1" size 6666
+2021-12-02T04:07:47.662670Z (0x0000700008f09000) [info] : publish received "Sample/189FFDD66F369F1/sample_channel1" size 6666
+2021-12-02T04:07:47.773151Z (0x0000700008f09000) [info] : publish received "Sample/189FFDD66F369F1/sample_channel1" size 6666
+2021-12-02T04:07:47.882474Z (0x0000700008f09000) [info] : publish received "Sample/189FFDD66F369F1/sample_channel1" size 6729
+2021-12-02T04:07:47.991750Z (0x0000700008f09000) [info] : publish received "Sample/189FFDD66F369F1/sample_channel1" size 6729
