@@ -34,7 +34,7 @@ OpcUAServer:
 #
 server:
     # port: <port # to listen on>
-    port: 7801
+    port: 7878
 
     # licenseKey: <your license key - default is demo mode if not provided>
 

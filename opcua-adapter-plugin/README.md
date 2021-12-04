@@ -8,10 +8,10 @@ Adapters
 {
   OPCUA_ADAPTER:OPCUA
   {
-    Url = opc.tcp://milo.digitalpetri.com:62541/milo
+    url = opc.tcp://demo.mtconnect.org:4840
 
     # namespaceFilter= <comma separated list of node's id using regex matching. stream data only from this node or below>
-    namespaceFilter= ns=2;s=Dynamic
+    namespaceFilter= ns=3
 
     # sampleInterval = <the fastest rate at which OPC UA server's monitored items should be accessed and evaluated (ms)>
     #                 default is 0, indicates that it should use the fastest practical rate
@@ -32,5 +32,4 @@ Adapters
     }
   }
 }
-
 ```
