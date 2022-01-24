@@ -4,7 +4,7 @@
                                                                          
 **Plugins** are dynamically loaded module for MTConnect and provide the same role as their respective adapters or gateways.
                     
-Additionally, MetaAgent also provides a number of real-time or time series database sink plugins: RethinkDB, InfluxDB and ElasticSearch. They provide data streaming services for the MetaAgent and let you capture the data for analysis.
+Additionally, MetaAgent also provides a number of real-time or time series database sink plugins: RethinkDB, InfluxDB, ElasticSearch and Kafka. They provide data streaming services for the MetaAgent and let you capture the data for analysis.
 
 For more details, please read their example configurations.
 
