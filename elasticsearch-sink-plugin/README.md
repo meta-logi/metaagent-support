@@ -1,6 +1,6 @@
 **elasticsearch-sink-plguin** is a ElasticSearch egress plugin for the MetaAgent.  The plugin streams data from the MetaAgent to a designated ElasticSearch v7.9+ server.
 
-MetaAgent configuration example using this ElasticSearch egress plugin:
+Here is a MetaAgent configuration example using this ElasticSearch egress plugin:
 ```
 Devices = _metaagent_.xml
 Port = 7979
