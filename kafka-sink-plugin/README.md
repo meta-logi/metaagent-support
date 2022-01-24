@@ -1,6 +1,6 @@
 **kafka-sink-plguin** is a Kafka egress plugin for the MetaAgent.  The plugin streams data from the MetaAgent to Kafka broker server(s).
 
-Device Data will be published in the topic MTConect.DeviceData.
+Device data will be published to the topic MTConect.DeviceData. Device model will be published to the topic MTConnect.DeviceProbe.
  
 Here is a MetaAgent configuration example using this Kafka egress plugin:
 ```
