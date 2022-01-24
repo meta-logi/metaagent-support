@@ -8,4 +8,4 @@ Additionally, MetaAgent also provides a number of real-time or time series datab
 
 For more details, please read their example configurations.
 
-Note that all OPC UA and NC-Link modules function without license keys. But publish or process rate will be limited to once per minute and for outbound interfaces, only unsecured connections are allowed.
+**Note that all modules function without license keys.** For OPC UA and NC-Link modules, publish or process rate will be limited to once per minute and for outbound interfaces, only unsecured connections are allowed. For other modules, each data item will only get updated every 20 seconds.
