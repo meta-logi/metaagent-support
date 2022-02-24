@@ -1,8 +1,0 @@
-2021-12-02T04:07:29.283057Z (0x00000001232c9e00) [info] MAIN->AgentConfiguration::initialize->AgentConfiguration::loadConfig: Starting agent on port 7979
-2021-12-02T04:07:29.328308Z (0x00000001232c9e00) [warning] MAIN->AgentConfiguration::initialize->AgentConfiguration::loadConfig->AgentConfiguration::loadAdapters: Cannot locate device name 'NC-Link', trying default
-2021-12-02T04:07:29.328388Z (0x00000001232c9e00) [info] MAIN->AgentConfiguration::initialize->AgentConfiguration::loadConfig->AgentConfiguration::loadAdapters: Assigning default device Mazak to adapter
-2021-12-02T04:07:29.361328Z (0x00000001232c9e00) [info] MAIN->AgentConfiguration::initialize->AgentConfiguration::loadConfig->AgentConfiguration::loadAdapters: shdr: Adding adapter for Mazak: NC-LINK_ADAPTER:NC-Link
-2021-12-02T04:07:40.394740Z (0x0000000118c34e00) [info] MAIN->AgentConfiguration::initialize->AgentConfiguration::loadConfig: Starting agent on port 7979
-2021-12-02T04:07:40.442771Z (0x0000000118c34e00) [warning] MAIN->AgentConfiguration::initialize->AgentConfiguration::loadConfig->AgentConfiguration::loadAdapters: Cannot locate device name 'NC-Link', trying default
-2021-12-02T04:07:40.442851Z (0x0000000118c34e00) [info] MAIN->AgentConfiguration::initialize->AgentConfiguration::loadConfig->AgentConfiguration::loadAdapters: Assigning default device Mazak to adapter
-2021-12-02T04:07:40.478962Z (0x0000000118c34e00) [info] MAIN->AgentConfiguration::initialize->AgentConfiguration::loadConfig->AgentConfiguration::loadAdapters: shdr: Adding adapter for Mazak: NC-LINK_ADAPTER:NC-Link

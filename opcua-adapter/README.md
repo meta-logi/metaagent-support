@@ -16,7 +16,7 @@ OpcUAServer:
     # url: <opcua server's url>
     url: opc.tcp://milo.digitalpetri.com:62541/milo
 
-    # namespaceFilter= <comma separated list of node's id using regex matching. stream data only from this node or below>
+    # namespaceFilter: <comma separated list of node's id using regex matching. stream data only from this node or below>
     namespaceFilter: ns=2;s=Dynamic
 
     # sampleInterval: <the fastest rate at which OPC UA server's monitored items should be accessed and evaluated (ms)>

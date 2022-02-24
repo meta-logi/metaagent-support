@@ -24,18 +24,20 @@ Sinks
     #
     # Additional optional connection info
     # dbname   = <database name - default is mtconnect>
-    # authkey  = <admin's password>
-    dbname = test
-    authkey = secret
+    # authKey  = <admin's password>
+    dbname = demo
+    authKey = secret
 
     #
     # table info
     # probeInfo_table = <table name for probe info - default is probeInfo> 
     # dataInfo_table  = <table name for data info - default is dataInfo>
+    # assetInfo_table  = <table name for asset info - default is assetInfo>
     # data_table = <table name for storing current data values - default is mtdata>
     #
     probeInfo_table = myProbeInfo
     dataInfo_table = myDataInfo
+    assetInfo_table = myAssetInfo
     data_table = myData
 
     # licenseKey = <your license key - default is demo mode if not provided>

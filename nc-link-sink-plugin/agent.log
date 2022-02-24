@@ -1,6 +1,0 @@
-2021-12-02T03:30:38.692336Z (0x000000011c76be00) [info] MAIN->AgentConfiguration::initialize->AgentConfiguration::loadConfig: Starting agent on port 7979
-2021-12-02T03:30:38.728833Z (0x000000011c76be00) [info] MAIN->AgentConfiguration::initialize->AgentConfiguration::loadConfig->AgentConfiguration::loadSinks: Loaded sink plugin NC-LINK
-2021-12-02T03:30:38.777933Z (0x000000011c76be00) [warning] MAIN->AgentConfiguration::initialize->AgentConfiguration::loadConfig->AgentConfiguration::loadAdapters: Cannot locate device name 'Adapter_1', trying default
-2021-12-02T03:30:38.778037Z (0x000000011c76be00) [info] MAIN->AgentConfiguration::initialize->AgentConfiguration::loadConfig->AgentConfiguration::loadAdapters: Assigning default device Mazak to adapter
-2021-12-02T03:30:38.782398Z (0x000000011c76be00) [info] MAIN->AgentConfiguration::initialize->AgentConfiguration::loadConfig->AgentConfiguration::loadAdapters: shdr: Adding adapter for Mazak: Adapter_1
-2021-12-02T03:30:38.858929Z (0x0000700008dc9000) [info] Connector::connected: Connected with: 144.126.211.72:7878

@@ -32,8 +32,8 @@ Sinks
     # Additional optional connection info
     # user =     <user's id>
     # password = <user's password>
-    # cert =     <location of certificate file>
-    # key =      <location of key file>
+    # cert =     <location of certificate file. Format: DER>
+    # key =      <location of key file. Format: DER>
 
     # licenseKey: <your license key - default is demo mode if not provided>
 
