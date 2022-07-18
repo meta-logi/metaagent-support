@@ -1,6 +1,6 @@
-**nc-link-adapter-plugin** is an ingress plugin for the MetaAgent. The plugin works as an interal adapter in the MetaAgent. It collects data from NC-Link servers and provide the stream updates to the MetaAgent.
+**nc-link-adapter-plugin** is an ingress plugin for MTConnect Agents. The plugin runs inside the agent as an internal adapter. It collects data from NC-Link servers and provide the stream updates.
 
-MetaAgent configuration example using this NC-Link ingress plugin:
+Here is a MTConnect agent configuration example using this NC-Link ingress plugin:
 ```
 Devices = _metaagent_.xml
 Port = 7979

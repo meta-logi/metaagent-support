@@ -5,7 +5,7 @@ Usage:
 opcua-adapter [config file - default is opcua-adapter.cfg]
 ```
 
-Configuration Example:
+Here is a opcua-adapter configuration example:
 ```
 # This configuration is for MetaAgent opcua-adapter
 #
@@ -17,7 +17,11 @@ OpcUAServer:
     url: opc.tcp://milo.digitalpetri.com:62541/milo
 
     # namespaceFilter: <comma separated list of node's id using regex matching. stream data only from this node or below>
-    namespaceFilter: ns=2;s=Dynamic
+    namespaceFilter: ns=2;s=File.*, \ # top nodes allows regex 
+                     ns=2;s=Dynamic/RandomDouble, \ # any individual node and their children 
+                     ns=2;s=Dynamic/RandomFloat, \
+                     ns=2;s=Dynamic/RandomInt32, \
+                     ns=2;s=CTT/Static/DA Profile/Analog Type
 
     # sampleInterval: <the fastest rate at which OPC UA server's monitored items should be accessed and evaluated (ms)>
     #                 default is 0, indicates that it should use the fastest practical rate

@@ -1,14 +1,14 @@
-**RethinkDB-sink-plguin** is a RethinkDB egress plugin for the MetaAgent.  The plugin streams data from the MetaAgent to a designated RethinkDB v2.4+ server.
+**RethinkDB-sink-plguin** is a RethinkDB egress plugin for MTConnet Agents.  The plugin streams data from the agent to a designated RethinkDB v2.4+ server.
 
-MetaAgent configuration example using this RethinkDB egress plugin:
+Here is a MTConnect agent configuration example using this RethinkDB egress plugin:
 ```
-Devices = _metaagent_.xml
+Devices = device.xml
 Port = 7979
 Adapters
 {
   Adapter_1
   {
-    Host = demo.metalogi.io
+    Host = localhost
     Port = 7878
   }
 }
@@ -17,28 +17,30 @@ Sinks
 {
   RETHINKDB {
     #
-    # RethinkDB location = <host name>:<port #>
+    # RethinkDB Server location = <host name>:<port #>
     #
-    location = 192.168.0.132:28015
+    RethinkDBServer = localhost:28015
 
     #
     # Additional optional connection info
-    # dbname   = <database name - default is mtconnect>
-    # authKey  = <admin's password>
-    dbname = demo
-    authKey = secret
+    # RethinkDBDatabase = <database name - default is mtconnect>
+    # RethinkDBAuthKey  = <admin's password>
+    RethinkDBDatabase = demo
+    #RethinkDBAuthKey = secrets
 
     #
     # table info
-    # probeInfo_table = <table name for probe info - default is probeInfo> 
-    # dataInfo_table  = <table name for data info - default is dataInfo>
-    # assetInfo_table  = <table name for asset info - default is assetInfo>
-    # data_table = <table name for storing current data values - default is mtdata>
+    # RethinkDBProbeTable = <table name for probe info - default is none (disabled) > 
+    # RethinkDBNodeTreeTable  = <table name for node tree selection - default is none (disabled) >
+    # RethinkDBItemInfoTable  = <table name for item info - default is none (disabled) >
+    # RethinkDBAssetInfoTable  = <table name for asset info - default is none (disabled) >
+    # RethinkDBDataTable = <table name for storing current data values - default is mtdata>
     #
-    probeInfo_table = myProbeInfo
-    dataInfo_table = myDataInfo
-    assetInfo_table = myAssetInfo
-    data_table = myData
+    RethinkDBProbeTable = myProbeInfo
+    RethinkDBNodeTreeTable = myNodeTree
+    RethinkDBItemInfoTable = myItemInfo
+    RethinkDBAssetInfoTable = myAssetInfo
+    RethinkDBDataTable = myData
 
     # licenseKey = <your license key - default is demo mode if not provided>
 

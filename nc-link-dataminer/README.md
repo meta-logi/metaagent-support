@@ -1,0 +1,76 @@
+**dataminer** is a NC-Link DataConnect Gateway process. It streams data from any NC-Link services to data services for RethinkDB, InfluxDB, ElasticSearch or Kafak.
+
+Here is a nc-link-dataminer configuration example that streams data from some devices in a NC-Link service to all four services:
+```
+# # devices
+devices:
+    - name: d1            # name is used to create data ids in the data services
+      uuid: d1            # device identifier in the NC-Link service
+      staleInterval: 1000 # wait staleInterval (in milliseconds) before sending updates. <0 - update only when changed.
+    #
+    # Repeat the section for additional device
+    #
+    - name: d2
+      uuid: d2
+
+#
+# NC-Link MQTT Agent information
+#
+server:
+    name: Demo
+    mqtt: 27.17.57.163
+    port: 1883
+
+    # =================== RethinkDB Defaults ==========================
+    # 
+    # this section should be removed if RethinkDB is not required
+    #
+    RethinkDBServer: localhost:28015
+    #RethinkDBAuthKey: <your authKey if needed>
+    RethinkDBDatabase: testing          # default is mtconnect
+    RethinkDBNodeTreeTable: sourceinfo  # default is none (disabled)
+    RethinkDBDataTable: mtdata          # default is mtdata
+    RethinkDBQueueSize: 20000           # default is 10000, max # of queue items.
+    RethinkDBBatchSize: 100             # default is 200, number of records to be processed together
+
+    # =================== InfluxDB Defaults ==========================
+    # 
+    # this section should be removed if InfluxDB is not required
+    #
+    InfluxDBUrl: http://localhost:8086
+    InfluxDBOrganization: testing      # InfluxDB Organization where the bucket is located
+    InfluxDBBucket: test               # InfluxDB Bucket
+    #InfluxDBAuthKey: <your authKey if needed>
+    InfluxDBOrganization: testing
+    InfluxDBQueueSize: 20000           # default is 10000, max # of queue items.
+    InfluxDBBatchSize: 100             # default is 200, number of records to be processed together
+ 
+    # =================== ElasticSearch Defaults ==========================
+    # 
+    # this section should be removed if ElasticSearch is not required
+    #
+    ElasticSearchUrl: http://localhost:9200
+    ElasticSearchUser: YourUserId
+    ElasticSearchPassword: YourPassword
+    ElasticSearchIndexName: mtconnect   # default is mtconnect, Index name associated with the data.
+    ElasticSearchQueueSize: 20000       # default is 10000, max # of queue items.
+    ElasticSearchBatchSize: 100         # default is 200, number of records to be processed together
+
+
+    # =================== Kafka Defaults ==========================
+    # 
+    # this section should be removed if Kafka is not required
+    #
+    KafkaBrokers: localhost:9092
+    KafkaTopicDeviceNodeTree: MTConnect.NewDeviceNodeTree   # default is none (disabled)
+    KafkaTopicDeviceData: MTConnect.NewDeviceData           # default is MTConnect.DeviceData
+    KafkaQueueSize: 20000                                   # default is 10000, max # of queue items.
+    KafkaBatchSize: 100                                     # default is 200, number of records to be processed together
+    # license
+    #licenseKey: <your Metalogi license key>
+
+# serverity can be debug, info, warn, error or off
+logging:
+    severity: info
+
+```
