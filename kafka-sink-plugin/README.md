@@ -1,4 +1,4 @@
-**kafka-sink-plguin** is a Kafka egress plugin for MTConnect Agents.  The plugin streams data from the agent to Kafka broker server(s).
+**kafka-sink-plugin** is a Kafka egress plugin for MTConnect Agents.  The plugin streams data from the agent to Kafka broker server(s).
 
 Here is a MetaAgent configuration example using this Kafka egress plugin:
 ```

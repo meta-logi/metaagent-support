@@ -1,4 +1,4 @@
-**elasticsearch-sink-plguin** is a ElasticSearch egress plugin for MTConnect Agents.  The plugin streams data from the agent to a designated ElasticSearch v7.9+ server.
+**elasticsearch-sink-plugin** is a ElasticSearch egress plugin for MTConnect Agents.  The plugin streams data from the agent to a designated ElasticSearch v7.9+ server.
 
 Here is a MetaAgent configuration example using this ElasticSearch egress plugin:
 ```

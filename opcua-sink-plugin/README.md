@@ -1,4 +1,4 @@
-**opcua-sink-plguin** is an OPC UA interface provider plugin for MTConnect Agents.  The plugin runs a OPC UA server in the agent to serve OPC UA clients according to MTConnect OPC UA Companion Specification.
+**opcua-sink-plugin** is an OPC UA interface provider plugin for MTConnect Agents.  The plugin runs a OPC UA server in the agent to serve OPC UA clients according to MTConnect OPC UA Companion Specification.
 
 Here is a MTConnect agent configuration example using this OPC UA egress plugin:
 ```

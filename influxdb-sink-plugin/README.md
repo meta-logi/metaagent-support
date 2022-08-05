@@ -1,4 +1,4 @@
-**InfluxDB-sink-plguin** is a InfluxDB egress plugin for MTConnect Agents.  The plugin streams data from the agent to a designated InfluxDB v2.0+ server.
+**InfluxDB-sink-plugin** is a InfluxDB egress plugin for MTConnect Agents.  The plugin streams data from the agent to a designated InfluxDB v2.0+ server.
 
 MetaAgent configuration example using this InfluxDB egress plugin:
 ```

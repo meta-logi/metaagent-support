@@ -1,4 +1,4 @@
-**RethinkDB-sink-plguin** is a RethinkDB egress plugin for MTConnet Agents.  The plugin streams data from the agent to a designated RethinkDB v2.4+ server.
+**RethinkDB-sink-plugin** is a RethinkDB egress plugin for MTConnet Agents.  The plugin streams data from the agent to a designated RethinkDB v2.4+ server.
 
 Here is a MTConnect agent configuration example using this RethinkDB egress plugin:
 ```

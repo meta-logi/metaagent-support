@@ -1,4 +1,4 @@
-**nc-link-sink-plguin** is a NC-Link interface provider plugin for MTConnect Agents. The plugin runs a NC-Link server inside the agent to serve NC-Link clients according to NC-Link Specification.
+**nc-link-sink-plugin** is a NC-Link interface provider plugin for MTConnect Agents. The plugin runs a NC-Link server inside the agent to serve NC-Link clients according to NC-Link Specification.
 
 MetaAgent configuration example using this NC-Link egress plugin:
 ```
