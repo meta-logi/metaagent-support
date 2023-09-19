@@ -1,6 +1,6 @@
-run **certgen** to generate your self-signed certificate which can be used for OPC UA client or server set up.
+The tool **certgen** is to generate your self-signed certificate which can be used for OPC UA client or server set up.
 
-Update the field subjectAltName, countryName, stateOrProvinceName, organizationName and commonName in the ssl.conf.
+Update the field **subjectAltName**, **countryName**, **stateOrProvinceName**, **organizationName** and **commonName** in the ssl.conf.
 
 ```
 [ req ]
