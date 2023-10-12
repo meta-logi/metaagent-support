@@ -6,10 +6,10 @@ Devices = device.xml
 Port = 7979
 Adapters
 {
-  Adapter_1
+  Mazak
   {
-    Host = localhost
-    Port = 7878
+    Host = demo.metalogi.io
+    Port = 7879
   }
 }
 

@@ -6,7 +6,7 @@ Devices = _metaagent_.xml
 Port = 7979
 Adapters
 {
-  OPCUA_ADAPTER:OPCUA
+  OPCUA_ADAPTER:OPCUA_ADAPTER
   {
     url = opc.tcp://demo.metalogi.io:4840
 
@@ -18,12 +18,21 @@ Adapters
 
     #
     # Additional optional connection info
+    # cert =     <location of the certificate file. Format: DER>
+    # key =      <location of the key file. Format: PEM>
     # user =     <user's id>
     # password = <user's password>
-    # cert =     <location of certificate file. Format: DER>
-    # key =      <location of key file. Format: DER>
+    #
+    # certificateCheck = [true, false]
+    #                    default is false
+    #
+    # messageSecurityMode = [None, sign, sign&encrypt]
+    # securityPolicy = [None, Basic128Rsa15, Basic256, Basic256Sha256, Aes128_Sha256_RsaOaep]
+    #
+    # messageSecurityMode and SecurityPolicy are only required if the server does not provide discovery service
+    #
 
-    # licenseKey: <your license key - default is demo mode if not provided>
+    # licenseKey = <your license key - default is demo mode if not provided>
 
     # option to override logger config for this adapter
     logger_config {

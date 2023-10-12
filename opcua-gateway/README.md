@@ -12,7 +12,7 @@ agents:
     #
     # - name: <device name>
     #   url:  <MTConnect Agent url>
-    #   freq: <poll period in seonds>
+    #   freq: <poll period in seconds>
     #
     - name: GFAgie01
       url:  https://smstestbed.nist.gov/vds/GFAgie01
@@ -51,10 +51,14 @@ server:
     #useWebSocket: TRUE
     #
     # Additional optional connection info
+    # cert:     <location of certificate file - DER>
+    # key:      <location of key file - PEM>
     # user:     <user's id>
     # password: <user's password>
-    # cert:     <location of certificate file>
-    # key:      <location of key file>
-
+    # certificateCheck: [true, false] 
+    #                   default is false
+    # allowSecurityPolicyNone: [true, false]
+    #                   default is false
+    #
     # licenseKey: <your license key - default is demo mode if not provided>
 ```

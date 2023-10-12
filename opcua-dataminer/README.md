@@ -2,24 +2,31 @@
 
 Here is a opcua-dataminer configuration example that streams data from some devices in a OPC UA service to all four services:
 ```
-# # devices
-devices:
-    - name: d1            # name is used to create data ids in the data services
-      uuid: d1            # device identifier in the OPC UA service
-      staleInterval: 1000 # wait staleInterval (in milliseconds) before sending updates. <0 - update only when changed.
-    #
-    # Repeat the section for additional device
-    #
-    - name: d2
-      uuid: d2
+# OPCUA Server information
+OpcUAServer:
+    name: d1
+    url:  opc.tcp://demo.metalogi.io:4840/
+    sampleInterval: 250
+    namespaceFilter: ns=3
 
-#
-# OPC UA MQTT Agent information
-#
-server:
-    name: Demo
-    mqtt: 27.17.57.163
-    port: 1883
+    #
+    # applicationUri: <application name, for some OPC UA server, they may require it to match the client's certificate and/or the server's application name>
+    #                 default is urn:open62541.server.application
+    #
+    # Additional optional connection info
+    # cert:     <location of the certificate file. Format: DER>
+    # key:      <location of the key file. Format: PEM>
+    # user:     <user's id>
+    # password: <user's password>
+    #
+    # certificateCheck: [true, false]
+    #                   default is false
+    #
+    # messageSecurityMode: [None, sign, sign&encrypt]
+    # securityPolicy: [None, Basic128Rsa15, Basic256, Basic256Sha256, Aes128_Sha256_RsaOaep]
+    #
+    # messageSecurityMode and SecurityPolicy are only required if the server does not provide discovery service
+    #
 
     # =================== RethinkDB Defaults ==========================
     # 
@@ -38,12 +45,12 @@ server:
     # this section should be removed if InfluxDB is not required
     #
     InfluxDBUrl: http://localhost:8086
-    InfluxDBOrganization: testing      # InfluxDB Organization where the bucket is located
-    InfluxDBBucket: test               # InfluxDB Bucket
+    InfluxDBOrganization: YourOrganization # InfluxDB Organization where the bucket is located
+    InfluxDBBucket: YourBucket             # InfluxDB Bucket
     #InfluxDBAuthKey: <your authKey if needed>
     InfluxDBOrganization: testing
-    InfluxDBQueueSize: 20000           # default is 10000, max # of queue items.
-    InfluxDBBatchSize: 100             # default is 200, number of records to be processed together
+    InfluxDBQueueSize: 20000               # default is 10000, max # of queue items.
+    InfluxDBBatchSize: 100                 # default is 200, number of records to be processed together
  
     # =================== ElasticSearch Defaults ==========================
     # 
@@ -66,11 +73,15 @@ server:
     KafkaTopicDeviceData: MTConnect.NewDeviceData           # default is MTConnect.DeviceData
     KafkaQueueSize: 20000                                   # default is 10000, max # of queue items.
     KafkaBatchSize: 100                                     # default is 200, number of records to be processed together
+
     # license
     #licenseKey: <your Metalogi license key>
+
 
 # serverity can be debug, info, warn, error or off
 logging:
     severity: info
+    messageOnly: false
+
 
 ```

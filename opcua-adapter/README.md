@@ -16,6 +16,11 @@ OpcUAServer:
     # url: <opcua server's url>
     url: opc.tcp://milo.digitalpetri.com:62541/milo
 
+    #
+    # applicationUri: <application name, for some OPC UA server, they may require it to match the client's certificate and/or the server's application name>
+    #                 default is urn:open62541.server.application
+    #
+
     # namespaceFilter: <comma separated list of node's id using regex matching. stream data only from this node or below>
     namespaceFilter: ns=2;s=File.*, \ # top nodes allows regex 
                      ns=2;s=Dynamic/RandomDouble, \ # any individual node and their children 
@@ -23,15 +28,25 @@ OpcUAServer:
                      ns=2;s=Dynamic/RandomInt32, \
                      ns=2;s=CTT/Static/DA Profile/Analog Type
 
+    #
     # sampleInterval: <the fastest rate at which OPC UA server's monitored items should be accessed and evaluated (ms)>
     #                 default is 0, indicates that it should use the fastest practical rate
 
     #
     # Additional optional connection info
+    # cert:     <location of the certificate file. Format: DER>
+    # key:      <location of the key file. Format: PEM>
     # user:     <user's id>
     # password: <user's password>
-    # cert:     <location of certificate file>
-    # key:      <location of key file>
+    #
+    # certificateCheck: [true, false]
+    #                   default is false
+    #
+    # messageSecurityMode: [None, sign, sign&encrypt]
+    # securityPolicy: [None, Basic128Rsa15, Basic256, Basic256Sha256, Aes128_Sha256_RsaOaep]
+    #
+    # messageSecurityMode and SecurityPolicy are only required if the server does not provide discovery service
+    #
 
 #
 # OPC UA MTConnect Adapter setting

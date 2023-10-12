@@ -6,16 +6,16 @@ Devices = _metaagent_.xml
 Port = 7979
 Adapters
 {
-  Adapter_1
+  Mazak
   {
     Host = demo.metalogi.io
-    Port = 7878
+    Port = 7879
   }
 }
 
 Sinks
 {
-  OPCUA {
+  OPCUA:OPCUA {
     #
     # server name display in OPC UA discovery
     #
@@ -30,12 +30,17 @@ Sinks
 
     #
     # Additional optional connection info
+    # cert =     <location of the certificate file. Format: DER>
+    # key =      <location of the key file. Format: PEM>
     # user =     <user's id>
     # password = <user's password>
-    # cert =     <location of certificate file. Format: DER>
-    # key =      <location of key file. Format: DER>
+    # certificateCheck = [true, false] 
+    #                    default is false
+    # allowSecurityPolicyNone = [true, false]
+    #                    default is false
+    #
 
-    # licenseKey: <your license key - default is demo mode if not provided>
+    # licenseKey = <your license key - default is demo mode if not provided>
 
     # override logger config 
     logger_config {

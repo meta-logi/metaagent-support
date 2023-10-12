@@ -33,7 +33,7 @@ Plugins {
 
 Adapters
 {
-  DemoAdapter
+  Mazak
   {
     Host = demo.metalogi.io
     Port = 7879
