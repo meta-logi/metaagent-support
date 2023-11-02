@@ -1,4 +1,4 @@
-**dataminer** is a NC-Link DataConnect Gateway process. It streams data from any NC-Link services to data services for RethinkDB, InfluxDB, ElasticSearch or Kafak.
+**nc-link-dataminer** is a NC-Link DataConnect Gateway process. It streams data from any NC-Link services to data services for RethinkDB, InfluxDB, ElasticSearch or Kafak.
 
 Here is a nc-link-dataminer configuration example that streams data from some devices in a NC-Link service to all four services:
 ```

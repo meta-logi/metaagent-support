@@ -1,4 +1,4 @@
-**dataminer** is a OPC UA DataConnect Gateway process. It streams data from any OPC UA services to data services for RethinkDB, InfluxDB, ElasticSearch or Kafak.
+**opcua-dataminer** is a OPC UA DataConnect Gateway process. It streams data from any OPC UA services to data services for RethinkDB, InfluxDB, ElasticSearch or Kafak.
 
 Here is a opcua-dataminer configuration example that streams data from some devices in a OPC UA service to all four services:
 ```

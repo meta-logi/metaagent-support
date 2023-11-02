@@ -1,4 +1,4 @@
-**QIF-adapter-plugin** is a QIF data feed plugin for MTConnet Agents.  The plugin scans QIF files and publishs their contents under MTConnect ASSET category.
+**QIF-adapter-plugin** is a QIF data feed plugin for MTConnet Agents.  The plugin scans QIF files and publishes their contents under MTConnect ASSET category.
 
 Here is a MTConnect agent configuration example using this QIF data feed plugin:
 ```
