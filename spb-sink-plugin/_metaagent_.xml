@@ -523,7 +523,7 @@
         <DataItem category="EVENT" id="osversion" subType="VERSION" type="OPERATING_SYSTEM"/>
         <DataItem category="EVENT" id="emworking" subType="WORKING" type="EQUIPMENT_MODE"/>
       </DataItems>
-        <Description manufacturer="Mazak_Corporation" serialNumber="317641">Variaxis w/SMooth-AI;ProductCode:PC;ProductInstanceUri:PIUri;Location:location;DeviceClass:DC</Description>
+        <Description manufacturer="Mazak_Corporation" serialNumber="317641">Variaxis w/SMooth-AI</Description>
       </Device>
     </Devices>
   </MTConnectDevices>
