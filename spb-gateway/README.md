@@ -12,9 +12,11 @@ agents:
     - name: Mazak
       url:  https://demo.metalogi.io/Mazak
       freq: 1
+      assetFreq: 60
     - name: Okuma
       url:  https://demo.metalogi.io/OKUMA
       freq: 1
+      assetFreq: 60
 
 logging:
     # serverity can be debug, info, warn, error or off, default is info
@@ -35,8 +37,18 @@ server:
     password : demo
 
     #
+    # additional optional connect info
+    # clientId : <mqtt session's client id>
+    # keepAlive : <PINGREQ interval>
+
+    #
     # SparkPlug B info
-    namespace : MTConnect Devices
+    #
+    # The Ignition tags are constructed under Edge Nodes / <groupId> / <edgeNodeId>
+    # groupId : <grouping for this edge node>
+    # edgeNodeId : <shoule be uniquely to represent this agent>
+    # 
+    groupId : MTConnect Devices
     edgeNodeId : Metalogi Node
 
     # licenseKey: <your license key - default is demo mode if not provided>

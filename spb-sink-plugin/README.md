@@ -20,14 +20,19 @@ Sinks
 
     #
     # mqtt connect info
-    #mqtt = <mqtt server hostname or ip>
-    #port = <mqtt server port #>
-    #user = <user id>
-    #password = <password>
+    # mqtt = <mqtt server hostname or ip>
+    # port = <mqtt server port #>
+    # user = <user id>
+    # password = <password>
     mqtt = ignition.metalogi.io
     port = 1883
     user = demo
     password = demo
+
+    #
+    # additional optional connect info
+    # clientId = <mqtt session's client id, default is system-generated>
+    # keepAlive = <PINGREQ interval, default is 30s>
 
     #
     # Secured connection info
@@ -36,13 +41,14 @@ Sinks
     # cert = <location of certificate file. Format: PEM>
     # key  = <location of key file. Format: PEM>
 
-
     #
     # Sparkplug B info
     #
-    # The Ignition tags are constructed under Edge Nodes / <namespace> / <edgeNodeId>
+    # The Ignition tags are constructed under Edge Nodes / <groupId> / <edgeNodeId>
+    # groupId = <grouping for this edge node>
+    # edgeNodeId = <shoule be uniquely to represent this agent>
     # 
-    namespace = MTConnect Devices
+    groupId = MTConnect Devices
     edgeNodeId = Metalogi Node
 
     # licenseKey = <your license key - default is demo mode if not provided>
@@ -53,6 +59,4 @@ Sinks
     }
   }
 }
-
-
 ```
