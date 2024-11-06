@@ -1,6 +1,6 @@
-**file-capture-sink-plugin** is a File-based egress plugin for MTConnet Agents. The plugin streams data from the agent to a file location. The output files are Asset-YYYY-MM-DD.txt and <deviceId>-Observation-YYYY-MM-DD.txt. It supports both json or delimiter separated text file format.
+**file-capture-sink-plugin** is a Data Capture egress plugin for MTConnet Agents. The plugin streams observation and asset data from the agent to a file location. The output files are Asset-YYYY-MM-DD.txt and <deviceId>-Observation-YYYY-MM-DD.txt. It supports both JSON and delimiter-separated text file formats.
 
-Here is a MTConnect agent configuration example using this File egress plugin:
+Here is a MTConnect agent configuration example using this FileCapture egress plugin:
 ```
 Devices = _metaagent_.xml
 Port = 7979
