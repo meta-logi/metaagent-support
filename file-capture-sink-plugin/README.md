@@ -29,7 +29,7 @@ Sinks
 
     # override logger config 
     logger_config {
-      output = file file-sink.log
+      output = file file-capture-sink.log
       level = info
     }
   }
