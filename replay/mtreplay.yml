@@ -13,7 +13,7 @@
 #    ? - matches a single character
 #      - any other character matches that character literally    
 replay:
-  path: capture/*.txt # file pattern, all files in the directory using a standard globbing pattern
+  path: data/*.txt # file pattern, all files in the directory using a standard globbing pattern
   max_interval: 200 # in ms. Allows for 
 # fixed_interval: <interval in ms>
 
@@ -24,6 +24,7 @@ replay:
 #
 # Allowed secerity levels are: trace, debug, info, warning, error, and fatal
 logging:
+  file: log/mtreplay.log
   level: warning # default: info. 
 # max_files: 10 # default 10
 # rotation_size: 1mb # default 10mb. 

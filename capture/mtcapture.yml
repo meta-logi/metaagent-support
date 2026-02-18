@@ -18,7 +18,7 @@ adapter:
 # "capture/mtcapture.txt", a file will be created as follows: capture/mtcapture_2026-02-15_20-13-49.txt on Feb 15,
 # 2026 at 8:13:49 pm. 
 capture:
-  file_name: capture/mtcapture.txt
+  file_name: data/mtcapture.txt
 
 # Logging configuration using a rolling file logger. The current defaults place logging information into a log file
 # in the same directory as the executable. The default rotation size (size when the log file is rolled into an archived
@@ -27,6 +27,7 @@ capture:
 #
 # Allowed secerity levels are: trace, debug, info, warning, error, and fatal
 logging:
+  file: log/mtcapture.log
   level: warning # default: info. 
 # max_files: 10 # default 10
 # rotation_size: 1mb # default 10mb. 
